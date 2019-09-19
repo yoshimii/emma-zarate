@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Projects from './Projects';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,7 +42,7 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500,
+    width: '100%'
   },
 }));
 
@@ -66,12 +67,12 @@ export default function Navigation() {
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-          variant="fullWidth"
-          aria-label="full width tabs example"
+          aria-label="centered tabs example"
+          centered
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="About Emma" {...a11yProps(0)} />
+          <Tab label="Projects" {...a11yProps(1)} />
+          <Tab label="Contact" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -80,13 +81,14 @@ export default function Navigation() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+          Get to know me.
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          My work. 
+          <Projects />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          Reach out!
         </TabPanel>
       </SwipeableViews>
     </div>
