@@ -8,6 +8,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Projects from './Projects';
+import Writing from './Writing';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -72,7 +73,8 @@ export default function Navigation() {
         >
           <Tab label="About Emma" {...a11yProps(0)} />
           <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Contact" {...a11yProps(2)} />
+          <Tab label="Writing" {...a11yProps(2)} />
+          <Tab label="Contact" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -88,6 +90,10 @@ export default function Navigation() {
           <Projects />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
+          Read Me 😉
+          <Writing />
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
           Reach out!
         </TabPanel>
       </SwipeableViews>
