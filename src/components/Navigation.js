@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Projects from './Projects';
 import Writing from './Writing';
+import About from './About';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -83,14 +84,14 @@ export default function Navigation() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Get to know me.
+          <About />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           My work. 
           <Projects />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Read Me 😉
+          Read Me <span role='img' aria-label='winky emoji'>😉</span>
           <Writing />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
