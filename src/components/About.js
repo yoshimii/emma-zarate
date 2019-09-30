@@ -1,4 +1,5 @@
 import React from 'react';
+import Waves from '../images/Waves.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -24,7 +25,7 @@ const About = () => {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/images/waves-in-chiba.jpg"
+          image={Waves}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -32,7 +33,7 @@ const About = () => {
             Emma
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Emma is a full-stack engineer. Her curiosity has taken her around the globe. She found that the world's problems can be solved with technology. She has returned home ready to prove just that. 
+            Emma is a full-stack engineer whose curiosity took her around the globe. She found that most of the world's problems can be solved with technology. She has returned home to prove just that. 
           </Typography>
         </CardContent>
       </CardActionArea>
