@@ -1,7 +1,7 @@
 import React from 'react';
 import Waves from '../images/Waves.jpg';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import Paper from '@material-ui/core/Paper';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -19,21 +19,21 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Paper square='false' className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          alt="Waves in Chiba"
+          height="200"
           image={Waves}
-          title="Contemplative Reptile"
+          title="Waves in Chiba"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Emma
+            About the Developer
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Emma is a full-stack engineer whose curiosity took her around the globe. She found that most of the world's problems can be solved with technology. She has returned home to prove just that. 
+            Emma is a full-stack engineer whose curiosity took her around the globe. She found that most of the world's problems can be solved with technology (& a little heart). She has returned home to prove just that. 
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -45,7 +45,7 @@ const About = () => {
           Learn More
         </Button>
       </CardActions>
-    </Card>
+    </Paper>
   );
 }
 

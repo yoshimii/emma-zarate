@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -44,3 +45,28 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.makeStyles-card-98 {
+  margin: 0 auto;
+}
+
+.MuiBox-root-97 {
+  height: 80vh;
+}
+.MuiCardActionArea-root {
+  height: 500px;
+}
+
+.MuiTypography-root .MuiTypography-body2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.MuiTypography-root .MuiTypography-h5 {
+  font-size: 2.7rem;
+}
+
+.MuiButtonBase-root .MuiCardActionArea-root img {
+  height: 300px;
+}
+
