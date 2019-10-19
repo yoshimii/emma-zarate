@@ -87,7 +87,7 @@ export default function Navigation() {
           <About />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          My work. 
+          
           <Projects />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
