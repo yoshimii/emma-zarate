@@ -10,6 +10,7 @@ import Box from '@material-ui/core/Box';
 import Projects from './Projects';
 import Writing from './Writing';
 import About from './About';
+import Contact from './Contact';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -91,11 +92,10 @@ export default function Navigation() {
           <Projects />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Read Me <span role='img' aria-label='winky emoji'>😉</span>
           <Writing />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          Reach out!
+          <Contact />
         </TabPanel>
       </SwipeableViews>
     </div>

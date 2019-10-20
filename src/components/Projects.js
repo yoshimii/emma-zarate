@@ -113,7 +113,7 @@ export default function MediaCard() {
             Better Reads
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          Material UI, React/Redux, Node/Express, Python <br/> A smarter way to search. Uses machine learning and natural language processing to improve search results based on human speach instead of the standard genre/author search.
+          Material UI, React/Redux, Node, Python <br/> A smarter way to search. Uses machine learning and natural language processing to improve search results based on human speach instead of the standard genre/author search.
           </Typography>
         </CardContent>
       </CardActionArea>
