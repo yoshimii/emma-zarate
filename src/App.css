@@ -46,16 +46,16 @@ a {
   text-decoration: none;
 }
 
-.makeStyles-card-98 {
+/* .makeStyles-card-98 {
   margin: 0 auto;
-}
+} */
 
 .MuiBox-root-97 {
   height: 80vh;
 }
-.MuiCardActionArea-root {
-  height: 500px;
-}
+/* .MuiCardActionArea-root {
+  margin: auto;
+} */
 
 .MuiTypography-root .MuiTypography-body2 {
   text-align: center;
