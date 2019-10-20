@@ -14,6 +14,7 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles({
   card: {
     maxWidth: 700,
+    margin: 'auto'
   },
   
 });
