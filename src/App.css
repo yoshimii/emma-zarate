@@ -76,13 +76,11 @@ body {
 .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
   color: #F7DD23;
   font-family: 'Nineteen Ninety Seven';
-  font-size: 18px;
 }
 
 .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
   color: #f5f5dc;
   font-family: 'Nineteen Ninety Seven';
-  font-size: 18px;
 }
 
 @media (max-width: 500px) {
@@ -126,7 +124,7 @@ a {
 }
 
 .MuiTypography-root .MuiTypography-h5 {
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 
 .MuiButtonBase-root .MuiCardActionArea-root img {
@@ -149,18 +147,6 @@ div {
 .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
   font-family: 'Nineteen ninety seven';
 }
-
-@media (max-width: 500px) {
-  .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
-    font-size: 18px;
-  }
-}
-
-/* .MuiTypography-root.MuiTypography-h5 {
-  font-family: 'Nineteen ninety seven';
-
-} */
-
 
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
   font-family: 'Nineteen ninety seven';
