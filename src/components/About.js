@@ -1,6 +1,5 @@
 import React from 'react';
 import Waves from '../images/Waves.jpg';
-import Galaga from '../images/galaga.svg';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import CardActionArea from '@material-ui/core/CardActionArea';
