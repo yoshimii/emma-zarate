@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import { borderRadius } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
 
@@ -11,7 +12,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     maxWidth: 500,
     margin: 'auto',
-    background: 'gray'
+    border: 'outset 10px #3f51b5',
+    backgroundColor: '#fffff2'
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -19,6 +21,8 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     margin: theme.spacing(1),
+    fontFamily: 'Nineteen ninety seven',
+    borderRadius: '0px'
   },
   input: {
     display: 'none',
@@ -38,9 +42,9 @@ export default function Contact() {
     setValues({ ...values, [name]: event.target.value });
   };
   
-  const clearState = e => {
+  // const clearState = e => {
 
-  }
+  // }
 
   const handleSubmit = e => {
       e.preventDefault();
