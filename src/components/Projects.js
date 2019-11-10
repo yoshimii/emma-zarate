@@ -16,7 +16,10 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
-    height: 440
+    height: 440,
+    border: 'outset 10px #3f51b5',
+    backgroundColor: '#fffff2',
+    textAlign: 'left'
   },
   media: {
     height: 140,
