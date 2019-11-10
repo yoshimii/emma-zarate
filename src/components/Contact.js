@@ -4,12 +4,14 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
+
   container: {
     display: 'flex',
     flexWrap: 'wrap',
     flexDirection: 'column',
     maxWidth: 500,
-    margin: 'auto'
+    margin: 'auto',
+    background: 'gray'
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -48,6 +50,7 @@ export default function Contact() {
   }
   return (
     <form onSubmit={handleSubmit} className={classes.container} noValidate autoComplete="off">
+      <h1>Reach out!</h1>
       <TextField
         id="standard-name"
         label="Name"
@@ -70,7 +73,6 @@ export default function Contact() {
         label="Message"
         multiline
         rows="4"
-        defaultValue="Drop me a line"
         className={classes.textField}
         value={values.message}
         onChange={handleChange('message')}
