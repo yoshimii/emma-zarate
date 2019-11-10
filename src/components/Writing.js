@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 700,
     margin: 'auto',
     textAlign: 'left',
+    border: 'outset 10px #3f51b5',
     backgroundColor: '#fffff2'
   },
 }));
