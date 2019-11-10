@@ -1,5 +1,6 @@
 import React from 'react';
-import Waves from '../images/Waves.jpg';
+import Waves from '../images/8bitwaves.png';
+import Twitter from '../images/twitter.png'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -46,7 +47,7 @@ const About = () => {
       <CardActions>
         <Button size="small" color="primary">
         <Link href="https://twitter.com/emmargherd" target="_blank" rel="noopener" className={classes.link}>
-          <TwitterIcon />
+          <img alt="Twitter logo" src={Twitter}/>
         </Link>
         </Button>
         <Link href="https://dev.to/yoshimii" target="_blank" rel="noopener" className={classes.link}>
