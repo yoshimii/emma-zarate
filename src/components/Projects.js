@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     height: 440,
     border: 'outset 10px #3f51b5',
     backgroundColor: '#fffff2',
+    fontSize: '10px',
     textAlign: 'left'
   },
   media: {
