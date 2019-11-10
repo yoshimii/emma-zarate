@@ -23,7 +23,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <Paper square='false' className={classes.card}>
+    <Paper square={false} className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -37,8 +37,7 @@ const About = () => {
             About the Developer
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Emma is a full-stack engineer whose curiosity took her around the globe. She found that most of the world's problems can be solved with technology (& a little heart). She would love to work with you! 
-          </Typography>
+          The fire to become a web developer first ignited during my education career. I discovered the immediacy of being able solve real problems with my own two hands. This unconventional career progression allowed me to leverage my understanding of customer facing needs and complex technical problems to create elegant and practical web apps.          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -48,7 +47,7 @@ const About = () => {
         </Link>
         </Button>
         <Link href="https://dev.to/yoshimii" target="_blank" rel="noopener" className={classes.link}>
-        <i class="fab fa-dev fa-2x"></i>
+        <i className="fab fa-dev fa-2x"></i>
         </Link>
         {/* <Button size="small" color="primary">
           Learn More
