@@ -76,11 +76,19 @@ body {
 .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
   color: #F7DD23;
   font-family: 'Nineteen Ninety Seven';
+  font-size: 18px;
 }
 
 .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
   color: #f5f5dc;
   font-family: 'Nineteen Ninety Seven';
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+    font-size: 10px;
+  }
 }
 
 
@@ -137,8 +145,15 @@ div {
     display: block;
 }
 
+/* main headings */
 .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
   font-family: 'Nineteen ninety seven';
+}
+
+@media (max-width: 500px) {
+  .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
+    font-size: 18px;
+  }
 }
 
 /* .MuiTypography-root.MuiTypography-h5 {
