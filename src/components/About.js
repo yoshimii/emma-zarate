@@ -16,7 +16,9 @@ const useStyles = makeStyles({
   card: {
     margin: 'auto',
     maxWidth: 700,
-    backgroundColor: '#fffff2'
+    border: 'outset 10px #3f51b5',
+    backgroundColor: '#fffff2',
+    textAlign: 'left'
   },
   
 });
