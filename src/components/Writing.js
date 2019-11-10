@@ -7,7 +7,7 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(2, 2),
-    width: 700,
+    maxWidth: 700,
     margin: 'auto',
     textAlign: 'left'
   },
