@@ -143,6 +143,19 @@ div {
     display: block;
 }
 
+/* about body text*/
+
+.MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
+  font-family: 'Nineteen ninety seven';
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
+    font-size: 12px;
+  }
+}
+
 /* main headings */
 .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
   font-family: 'Nineteen ninety seven';
