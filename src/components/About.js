@@ -1,5 +1,6 @@
 import React from 'react';
 import Waves from '../images/Waves.jpg';
+import Galaga from '../images/galaga.svg';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -14,7 +15,8 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles({
   card: {
     margin: 'auto',
-    maxWidth: 700
+    maxWidth: 700,
+    backgroundColor: '#fffff2'
   },
   
 });
