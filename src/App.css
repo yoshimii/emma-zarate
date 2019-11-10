@@ -56,19 +56,6 @@ body {
 }
 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorDefault{
   background-color: black;
 }
@@ -107,20 +94,12 @@ a {
   text-decoration: none;
 }
 
-/* .makeStyles-card-98 {
-  margin: 0 auto;
-} */
+.MuiTypography-root.MuiLink-root.MuiLink-underlineHover.MuiTypography-colorPrimary {
+  font-family: 'Nineteen ninety seven';
+}
 
 .MuiBox-root-97 {
   height: 80vh;
-}
-/* .MuiCardActionArea-root {
-  margin: auto;
-} */
-
-.MuiTypography-root .MuiTypography-body2 {
-  text-align: center;
-  font-size: 1rem;
 }
 
 .MuiTypography-root .MuiTypography-h5 {
