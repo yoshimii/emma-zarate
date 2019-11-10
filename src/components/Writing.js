@@ -22,15 +22,16 @@ export default function Writing() {
         <Typography variant="h5" component="h3">
         Learning React? Make it accessible now.
         </Typography>
-        <Typography component="p">
-<br/> <h3>1️⃣ First things first: title page</h3>
+
+<br/> <h3><span role='img' aria-label='emoji number one'>1️⃣</span> First things first: title page</h3>
 
 The first thing a user with a screen-reader hears is the name of the page they've landed on. Make the name meaningful. Give the user some context! Yada yada, we know. Right? But, how do you name the different component routes of a single page application? Glad you asked! Enter:
 
 React Document Title
 A simple installation npm install --save react-document-title and you've got Yousef and yourself an NPM package with a 'declarative way to specify document.title in a single-page app.'
 <br/>
-<h3>2️⃣ This second thing just right out surprised me: modals</h3>
+
+<h3><span role='img' aria-label='emoji number two'>2️⃣</span> This second thing just right out surprised me: modals</h3>
 
 Modal was a word I never cared to learn much about. It's not really one of those buzzwords we hear talked about all the time like-- ahem, agile or, cough vanilla JavaScript. But they are actually everywhere and are notoriously not #a11y (another good buzzword) friendly.
 
@@ -48,8 +49,9 @@ Just npm install react-aria-modaland the user can tab through the different fiel
 I love that someone took the time to build this, and as of this posting it does look like they are seeking co-maintainers! So, it's also a great opportunity to contribute to an open source project. Boom. Two birds one stone.
 
 Disclosure: This last thing isn't React specific so feel free to move on, but it's super easy to apply and to remember to do. Promise.
-<br/><h3>
-3️⃣ Third thing and often overlooked is: contrast 🖤</h3>
+<br/>
+
+<h3> <span role="img" aria-label="emoji number 3">3️⃣</span> Third thing and often overlooked is: contrast 🖤</h3>
 
 It's arguable that design is the most fun part of a new project. While some people wish it was just done already, others wish they had more time to make things pixel perfect. Not everyone has the luxury of being that opinionated.
 
@@ -63,7 +65,7 @@ Their contrast checker tests your colors to see if they get the WCAG (Web Conten
 <br/><br/>
 As makers of internet things, it's up to us to make all the things for everyone. These are all quick ways to make immeasurable differences in people's lives for the better.
 <br/><br/><Link href='https://dev.to/yoshimii/learning-react-make-it-accessible-now-1bb7' target='_blank'>Read the original post here</Link>
-        </Typography>
+
       </Paper>
     </div>
   );
