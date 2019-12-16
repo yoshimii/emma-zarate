@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
@@ -8,9 +8,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DeforestationDashBoard from '../images/deforestation_dashboard_home.png';
-import WaitingList from '../images/waiting_list.png';
+import DeforestationDashboard from '../images/deforestation_dashboard_home.png';
 import BetterReads from '../images/better_reads.png';
+import FutureHope from '../images/future_hope.png';
+import Census2020 from '../images/census_2020_atx.png';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
@@ -28,11 +29,44 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
+  const [ projects ] = useState([
+      {   
+          img: `${FutureHope}`,
+          title: "Future Hope School",
+          tech: "React + Redux, Cloud Firestore, Material UI",
+          desc: "Retired professionals can sign up to be virtual mentors to students in need in Ghana and other parts of the world",
+          github: "https://github.com/Lambda-School-Labs/future-hope-fe",
+          url: "https://www.futurehopeschool.com/"
+      },
+      {   
+        img: `${Census2020}`,
+        title: "Census2020 ATX",
+        tech: "React + Gatsby, US Web Design System",
+        desc: "Open source microsite for the city of Austin, intended to increase participation in hard to count regions",
+        github: "https://github.com/cityofaustin/census2020",
+        url: "https://deploy-preview-61--atx-census-2020.netlify.com/en"
+    },
+    {   
+      img: `${DeforestationDashboard}`,
+      title: "Deforestation Dashboard",
+      tech: "React, Node/Express, Chart.js, Material UI",
+      desc: "Securely display and store easy to digeset deforestation graphs and charts for quick access. ",
+      github: "https://github.com/bw-deforestationdashboard/FrontEnd",
+      url: "https://deforestationdashboard.netlify.com/map-view"
+  },
+  {   
+    img: `${BetterReads}`,
+    title: "Better Reads",
+    tech: "React + Redux, Material UI, Python, Node/Express, SQLite3, Heroku",
+    desc: "A smarter way to search. Uses machine learning and natural language processing to improve search results.",
+    github: "https://github.com/better-reads-9-20",
+    url: "https://betterreads.now.sh/"
+}
+  ])
 
   return (
-    //   Project 1
    <Grid 
    container
    direction="row"
@@ -40,101 +74,40 @@ export default function MediaCard() {
    alignItems="center"
    spacing={2}
    > 
-    <Grid item>  
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={DeforestationDashBoard}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Deforestation Dashboard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Material UI, React, Node, Charts.js, Python <br/>Simple app where the user can display and store deforestation graphs and charts for quick secure access.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Button size="small" color="primary">
-        <Link href="https://github.com/bw-deforestationdashboard" target="_blank" rel="noopener" className={classes.link}>
-          Code
-        </Link>
-        </Button>
-        <Button size="small" color="primary">
-        <Link href="https://deforestationdashboard.netlify.com/map-view" target="_blank" rel="noopener" className={classes.link}>
-          Try It Out
-        </Link>
-        </Button>
-      </CardActions>
-    </Card>
-    </Grid>
-{/* Project 2 */}
-<Grid item> 
-<Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={WaitingList}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Waiting <br/>List
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Material UI, React, Reducer Pattern<br/>Host life just got easier. A host can update a party on the fly and keep track of check in time with automatic time stamps.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Button size="small" color="primary">
-        <Link href="https://github.com/yoshimii/reducer-todo" target="_blank" rel="noopener" className={classes.link}>
-          Code
-        </Link>
-        </Button>
-        <Button size="small" color="primary">
-        <Link href="https://waitinglist.netlify.com/" target="_blank" rel="noopener" className={classes.link}>
-          Try It Out
-        </Link>
-        </Button>
-      </CardActions>
-    </Card>
-</Grid>{/*End Grid item 3 */}
-{/* Project 3  */}
-<Grid item> 
-<Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={BetterReads}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Better Reads
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Material UI, React/Redux, Node, Python <br/> A smarter way to search. Uses machine learning and natural language processing to improve search results based on human speach instead of the standard genre/author search.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Button size="small" color="primary">
-        <Link href="https://github.com/better-reads-9-20/Front-End" target="_blank" rel="noopener" className={classes.link}>
-          Code
-        </Link>
-        </Button>
-        <Button size="small" color="primary">
-        <Link href="https://betterreads.now.sh" target="_blank" rel="noopener" className={classes.link}>
-          Try It Out
-        </Link>
-        </Button>
-      </CardActions>
-    </Card>
-</Grid>{/*End Grid item 3 */}
+   {projects.map((project) => {
+     return <Grid item>  
+     <Card className={classes.card}>
+       <CardActionArea>
+         <CardMedia
+           className={classes.media}
+           image={project.img}
+           title={project.title}
+         />
+         <CardContent>
+           <Typography gutterBottom variant="h5" component="h2">
+             {project.title}
+           </Typography>
+           <Typography variant="body2" color="textSecondary" component="p">
+           {project.tech} <br/>{project.desc}
+           </Typography>
+         </CardContent>
+       </CardActionArea>
+       <CardActions>
+       <Button size="small" color="primary">
+         <Link href={project.github} target="_blank" rel="noopener" className={classes.link}>
+           Code
+         </Link>
+         </Button>
+         <Button size="small" color="primary">
+         <Link href={project.url} target="_blank" rel="noopener" className={classes.link}>
+           Try It Out
+         </Link>
+         </Button>
+       </CardActions>
+     </Card>
+     </Grid>
+   })}
+ 
 </Grid>
   );
 }
