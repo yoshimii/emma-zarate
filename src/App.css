@@ -406,13 +406,12 @@ section {
   color: white;
 }
 h1 {
-  columns: ;
   font-size: 2em;
   margin: 0.67em 0;
 
 }
 
- section p {
+ section  {
   background-color: rgba(0, 0, 0, .7);
 }
 
@@ -435,6 +434,19 @@ h1 {
   .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
     font-size: 10px;
   }
+
+  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
+    height: 3rem !important;
+  }
+
+  .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
+    font-size: 12px;
+  }
+    h1 {
+      font-size: 1.5em;
+    
+    }
+
 }
 
 
@@ -490,11 +502,7 @@ div {
   text-align: left;
 }
 
-@media (max-width: 500px) {
-  .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
-    font-size: 12px;
-  }
-}
+
 
 /* main headings */
 .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
@@ -526,12 +534,12 @@ img {
 
 /* Style nav bar fighter */
 
-.PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63 {
-position: fixed !important;
+.PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63{
+/* position: fixed !important; */
 background-size: contain;
-background-image: url(https://i.imgur.com/HxhsqrO.png);
+background-image: url(images/Fighter.svg);
 height: 5rem;
-/* width: 5rem !important; */
+width: 5rem !important;
 position: fixed;
 top: 100px;
 z-index: 1;
@@ -542,7 +550,13 @@ background-position: center;
 }
 
 .about-panel {
-  height: 50vh;
+  height: auto;
   overflow: hidden;
   background-color: transparent;
+  transform: translateY(40%);
+}
+
+.projects-panel {
+  min-height: 100vh;
+  transform: translateY(10rem);
 }
