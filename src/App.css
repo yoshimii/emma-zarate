@@ -575,7 +575,7 @@ background-position: center;
   }
 
 .about-panel {
-  height: auto;
+  height: 100rem;
   overflow: hidden;
   background-color: transparent;
   transform: translateY(40%);
