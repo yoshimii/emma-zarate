@@ -44,7 +44,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: 'black',
+    backgroundColor: 'transparent',
     width: '100%'
   },
 }));
@@ -77,6 +77,7 @@ export default function Navigation() {
           <Tab label="Projects" {...a11yProps(1)} />
           <Tab label="Writing" {...a11yProps(2)} />
           <Tab label="Contact" {...a11yProps(3)} />
+          <Tab label="Resume" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -84,7 +85,7 @@ export default function Navigation() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
+        <TabPanel className="about-panel" value={value} index={0} dir={theme.direction}>
           <About />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
@@ -97,7 +98,7 @@ export default function Navigation() {
         <TabPanel value={value} index={3} dir={theme.direction}>
           <Contact />
         </TabPanel>
-      </SwipeableViews>
+      </SwipeableViews> 
     </div>
   );
 }
