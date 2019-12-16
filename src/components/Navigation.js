@@ -84,6 +84,7 @@ export default function Navigation() {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
+        className="swipeable-panels"
       >
         <TabPanel className="about-panel" value={value} index={0} dir={theme.direction}>
           <About />
