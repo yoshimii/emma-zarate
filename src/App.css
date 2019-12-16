@@ -549,12 +549,11 @@ background-position: center;
 }
 
 .jss63{
-  /* position: fixed !important; */
+  position: fixed !important;
   background-size: contain;
   background-image: url(images/Fighter.svg);
-  height: 5rem;
+  height: 5rem !important;
   width: 5rem !important;
-  position: fixed;
   top: 100px;
   z-index: 1;
   background-color: transparent !important;
