@@ -91,10 +91,10 @@ export default function Navigation() {
         <TabPanel className="projects-panel" value={value} index={1} dir={theme.direction}>          
           <Projects />
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
+        <TabPanel className="writing-panel" value={value} index={2} dir={theme.direction}>
           <Writing />
         </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
+        <TabPanel className="contact-panel" value={value} index={3} dir={theme.direction}>
           <Contact />
         </TabPanel>
       </SwipeableViews> 

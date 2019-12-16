@@ -546,8 +546,21 @@ z-index: 1;
 background-color: transparent !important;
 background-repeat: no-repeat;
 background-position: center;
-
 }
+
+.jss63{
+  /* position: fixed !important; */
+  background-size: contain;
+  background-image: url(images/Fighter.svg);
+  height: 5rem;
+  width: 5rem !important;
+  position: fixed;
+  top: 100px;
+  z-index: 1;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-position: center;  
+  }
 
 .about-panel {
   height: auto;
@@ -556,7 +569,7 @@ background-position: center;
   transform: translateY(40%);
 }
 
-.projects-panel {
+.projects-panel, .writing-panel, .contact-panel {
   min-height: 100vh;
   transform: translateY(10rem);
 }
