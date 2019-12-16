@@ -583,10 +583,12 @@ background-position: center;
 
 .projects-panel {
   height: 100rem;
+  transform: translateY(40%);
 }
 
 .writing-panel {
   height: 125rem;
+  transform: translateY(40%);
 }
 
 .contact-panel {
