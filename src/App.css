@@ -447,6 +447,18 @@ h1 {
     
     }
 
+    .projects-panel {
+      height: 150rem;
+    }
+
+    .writing-panel {
+      height: 250rem;
+    }
+    
+    .about-panel {
+      height: 50rem;
+    }
+
 }
 
 
@@ -500,6 +512,7 @@ div {
 .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
   font-family: 'Nineteen ninety seven';
   text-align: left;
+  color: black;
 }
 
 
@@ -568,7 +581,15 @@ background-position: center;
   transform: translateY(40%);
 }
 
-.projects-panel, .writing-panel, .contact-panel {
+.projects-panel {
+  height: 100rem;
+}
+
+.writing-panel {
+  height: 125rem;
+}
+
+.contact-panel {
   min-height: 100vh;
   transform: translateY(10rem);
 }
