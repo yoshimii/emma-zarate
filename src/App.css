@@ -578,7 +578,7 @@ background-position: center;
   height: 100rem;
   overflow: hidden;
   background-color: transparent;
-  transform: translateY(40%);
+  transform: translateY(10rem);
 }
 
 .projects-panel {
