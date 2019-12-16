@@ -185,10 +185,20 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+/* Style about panel */
 
+section {
+  color: white;
+}
 h1 {
+  columns: ;
   font-size: 2em;
   margin: 0.67em 0;
+
+}
+
+p {
+  background-color: rgba(0, 0, 0, .7);
 }
 
 /* Grouping content
@@ -527,4 +537,10 @@ background-color: transparent !important;
 background-repeat: no-repeat;
 background-position: center;
 
+}
+
+.about-panel {
+  height: 50vh;
+  overflow: hidden;
+  background-color: transparent;
 }
