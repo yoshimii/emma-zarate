@@ -572,8 +572,3 @@ background-position: center;
   min-height: 100vh;
   transform: translateY(10rem);
 }
-
-.react-swipeable-view-container div {
-  height: 100vh;
-  overflow: hidden;
-}
