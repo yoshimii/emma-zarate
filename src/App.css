@@ -404,17 +404,17 @@ body {
 
 section {
   color: white;
+  background-color: rgba(0, 0, 0, .7);
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 10px solid rgba(255, 255, 0, .7)
 }
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 
 }
-
- section  {
-  background-color: rgba(0, 0, 0, .7);
-}
-
 
 .MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorDefault{
   background-color: black;
@@ -434,9 +434,10 @@ h1 {
   .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
     font-size: 10px;
   }
-
+/*  */
   .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
     height: 3rem !important;
+    width: 6rem !important;
   }
 
   .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
@@ -459,6 +460,27 @@ h1 {
       height: 50rem;
     }
 
+    section {
+      width: auto;
+    }
+
+}
+/* Style tablet view  */
+@media (max-width: 768px) {
+
+
+  section {
+    width: 30rem;
+  }
+
+  .projects-panel {
+    height: 200rem !important;
+  }
+/* Style fighter */
+  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
+    height: 4.5rem !important;
+    width: 9rem !important;
+  }
 }
 
 
