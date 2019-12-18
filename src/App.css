@@ -548,7 +548,6 @@ background-position: center;
   }
 
 .about-panel {
-  height: 100rem;
   overflow: hidden;
   background-color: transparent;
   transform: translateY(10rem);
@@ -574,7 +573,7 @@ background-position: center;
 }
 
 .resume-panel {
-  min-height: 200vh;
+  min-height: 200rem;
   transform: translateY(10rem);
 }
 
@@ -624,10 +623,6 @@ background-position: center;
 
     .writing-panel {
       height: 250rem;
-    }
-    
-    .about-panel {
-      height: 50rem;
     }
 
     section .about-panel {
