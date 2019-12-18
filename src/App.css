@@ -573,7 +573,7 @@ background-position: center;
 }
 
 .resume-panel {
-  min-height: 200rem;
+  min-height: 150rem;
   transform: translateY(10rem);
 }
 
@@ -590,7 +590,7 @@ background-position: center;
   }
 
   .projects-panel {
-    height: 200rem !important;
+    height: 150rem;
   }
 /* Style fighter */
   .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
@@ -618,7 +618,7 @@ background-position: center;
     }
 
     .projects-panel {
-      height: 150rem;
+      height: 140rem;
     }
 
     .writing-panel {
