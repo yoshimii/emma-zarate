@@ -11,6 +11,7 @@ import Projects from './Projects';
 import Writing from './Writing';
 import About from './About';
 import Contact from './Contact';
+import Resume from './Resume';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -97,6 +98,9 @@ export default function Navigation() {
         </TabPanel>
         <TabPanel className="contact-panel" value={value} index={3} dir={theme.direction}>
           <Contact />
+        </TabPanel>
+        <TabPanel className="resume-panel" value={value} index={4} dir={theme.direction}>
+          <Resume />
         </TabPanel>
       </SwipeableViews> 
     </div>
