@@ -405,7 +405,7 @@ body {
 section {
   color: white;
   background-color: rgba(0, 0, 0, .7);
-  width: 50rem;
+  max-width: 50rem;
   margin: 0 auto;
   border-radius: 6px;
   border: 10px solid rgba(255, 255, 0, .7)
@@ -430,58 +430,7 @@ h1 {
   font-family: 'Nineteen Ninety Seven';
 }
 
-@media (max-width: 500px) {
-  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
-    font-size: 10px;
-  }
-/*  */
-  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
-    height: 3rem !important;
-    width: 6rem !important;
-  }
 
-  .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
-    font-size: 12px;
-  }
-    h1 {
-      font-size: 1.5em;
-    
-    }
-
-    .projects-panel {
-      height: 150rem;
-    }
-
-    .writing-panel {
-      height: 250rem;
-    }
-    
-    .about-panel {
-      height: 50rem;
-    }
-
-    section {
-      width: auto;
-    }
-
-}
-/* Style tablet view  */
-@media (max-width: 768px) {
-
-
-  section {
-    width: 30rem;
-  }
-
-  .projects-panel {
-    height: 200rem !important;
-  }
-/* Style fighter */
-  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
-    height: 4.5rem !important;
-    width: 9rem !important;
-  }
-}
 
 
 a {
@@ -536,6 +485,8 @@ div {
   text-align: left;
   color: black;
 }
+
+
 
 
 
@@ -603,6 +554,10 @@ background-position: center;
   transform: translateY(10rem);
 }
 
+.about-panel p {
+  margin: 1rem;
+}
+
 .projects-panel {
   height: 100rem;
   transform: translateY(10rem);
@@ -618,6 +573,65 @@ background-position: center;
   transform: translateY(10rem);
 }
 
+.resume-panel {
+  min-height: 200vh;
+  transform: translateY(10rem);
+}
+
 .swipeable-panels div div {
   overflow: hidden !important;
+}
+
+/* Style tablet view  */
+@media (max-width: 768px) {
+
+
+  section {
+    width: auto;
+  }
+
+  .projects-panel {
+    height: 200rem !important;
+  }
+/* Style fighter */
+  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
+    height: 4.5rem !important;
+    width: 9rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+    font-size: 10px;
+  }
+/*  */
+  .PrivateTabIndicator-root-62.PrivateTabIndicator-colorPrimary-63, .jss63 {
+    height: 3rem !important;
+    width: 6rem !important;
+  }
+
+  .MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
+    font-size: 12px;
+  }
+    h1 {
+      font-size: 1.5em;
+    
+    }
+
+    .projects-panel {
+      height: 150rem;
+    }
+
+    .writing-panel {
+      height: 250rem;
+    }
+    
+    .about-panel {
+      height: 50rem;
+    }
+
+    section .about-panel {
+      width: 375px;
+    }
+
 }
