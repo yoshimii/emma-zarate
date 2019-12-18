@@ -548,6 +548,7 @@ background-position: center;
   }
 
 .about-panel {
+  height: 90vh;
   overflow: hidden;
   background-color: transparent;
   transform: translateY(10rem);
