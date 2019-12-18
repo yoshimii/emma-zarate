@@ -1,0 +1,63 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+.resume h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1.3px;
+}
+
+.resume h2 {
+    font-size: 1.1rem;
+    text-align: left;
+    letter-spacing: 1.3px;
+}
+
+.resume h3 {
+    text-align: left;
+    letter-spacing: 1.3px;
+}
+
+.resume p {
+    font-family: monospace;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+span {
+    color: #cddc39
+}
+
+.resume a {
+    padding: 1.1rem;
+    text-align: right;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.mission {
+    margin: 2rem;;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media(max-width: 500px) {
+    .mission {
+        margin: 1rem;;
+    }
+}
+ 
