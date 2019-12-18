@@ -8,10 +8,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DeforestationDashboard from '../images/deforestation_dashboard_home.png';
-import BetterReads from '../images/better_reads.png';
-import FutureHope from '../images/future_hope.png';
-import Census2020 from '../images/census_2020_atx.png';
+import DeforestationDashboard from '../images/deforestation_dashboard_home_tny.png';
+import BetterReads from '../images/better_reads_tny.png';
+import FutureHope from '../images/future_hope_tny.png';
+import Census2020 from '../images/census_2020_atx_tny.png';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
@@ -21,7 +21,10 @@ const useStyles = makeStyles({
     border: 'outset 10px #3f51b5',
     backgroundColor: '#fffff2',
     fontSize: '10px',
-    textAlign: 'left'
+    textAlign: 'left',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between'
   },
   media: {
     height: 140,
