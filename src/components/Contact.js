@@ -2,6 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles(theme => ({
 
@@ -85,6 +89,12 @@ export default function Contact() {
     <Button variant="contained" onClick={handleSubmit} className={classes.button}>
         Submit
       </Button>
+      <div className="contact-icons">
+      <a href="https://twitter.com/emmargherd" target="_blank" rel="noopener noreferrer"><TwitterIcon/></a>
+      <a href="https://www.linkedin.com/in/emmazarate/" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+      <a href="https://github.com/yoshimii" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+      <a href="mailto:zarate.emm@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></a>
+      </div>
     </form>
   );
 }
