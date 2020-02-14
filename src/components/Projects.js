@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import DeforestationDashboard from '../images/deforestation_dashboard_home_tny.png';
+import SpaceBeez from '../images/space_beez_dungeon.jpg'
 import BetterReads from '../images/better_reads_tny.png';
 import FutureHope from '../images/future_hope_tny.png';
 import Census2020 from '../images/census_2020_atx_tny.png';
@@ -52,21 +53,21 @@ export default function MediaCard(props) {
         url: "https://deploy-preview-61--atx-census-2020.netlify.com/en"
     },
     {   
-      img: `${DeforestationDashboard}`,
-      title: "Deforestation Dashboard",
-      tech: "React, Node/Express, Chart.js, Material UI",
-      desc: "Securely display and store easy to digeset deforestation graphs and charts for quick access. ",
-      github: "https://github.com/bw-deforestationdashboard/FrontEnd",
-      url: "https://deforestationdashboard.netlify.com/map-view"
+      img: `${SpaceBeez}`,
+      title: "Space Beez",
+      tech: "Django/Python, React, Pusher, Bootstrap",
+      desc: "Chat with other players in this massive multiuser dungeon game!",
+      github: "https://github.com/muddier/CS-Build-Week-1",
+      url: "https://github.com/muddier/CS-Build-Week-1"
   },
   {   
-    img: `${BetterReads}`,
-    title: "Better Reads",
-    tech: "React + Redux, Material UI, Python, Node/Express, SQLite3, Heroku",
-    desc: "A smarter way to search. Uses machine learning and natural language processing to improve search results.",
-    github: "https://github.com/better-reads-9-20",
-    url: "https://betterreads.now.sh/"
-}
+    img: `${DeforestationDashboard}`,
+    title: "Deforestation Dashboard",
+    tech: "React, Node/Express, Chart.js, Material UI",
+    desc: "Securely display and store easy to digeset deforestation graphs and charts for quick access. ",
+    github: "https://github.com/bw-deforestationdashboard/FrontEnd",
+    url: "https://deforestationdashboard.netlify.com/map-view"
+},
   ])
 
   return (
