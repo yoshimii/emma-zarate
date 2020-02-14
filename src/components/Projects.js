@@ -58,7 +58,7 @@ export default function MediaCard(props) {
       tech: "Django/Python, React, Pusher, Bootstrap",
       desc: "Chat with other players in this massive multiuser dungeon game!",
       github: "https://github.com/muddier/CS-Build-Week-1",
-      url: "https://github.com/muddier/CS-Build-Week-1"
+      url: "https://spacebeez.netlify.com/"
   },
   {   
     img: `${DeforestationDashboard}`,
