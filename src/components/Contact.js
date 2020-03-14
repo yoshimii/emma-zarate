@@ -20,11 +20,6 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
   },
-  button: {
-    margin: theme.spacing(1),
-    fontFamily: 'Nineteen ninety seven',
-    borderRadius: '0px',
-  },
   input: {
     display: 'none',
   },
@@ -99,7 +94,8 @@ export default function Contact() {
       />
       {values.status === "SUCCESS" ? <p>Thanks for your message! I'll get in touch as soon as I'm available.</p> : 
       <button variant="contained"
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-263">
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-263" 
+        style={{ margin: '6px', borderRadius: '0px', fontFamily: 'Nineteen ninety seven'}}>
           <span className="MuiButton-label">
             SUBMIT
           </span>
