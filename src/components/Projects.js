@@ -9,8 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import DeforestationDashboard from '../images/deforestation_dashboard_home_tny.png';
-import SpaceBeez from '../images/space_beez_dungeon.jpg'
-import BetterReads from '../images/better_reads_tny.png';
+import SpaceBeez from '../images/space_beez_dungeon.jpg';
 import FutureHope from '../images/future_hope_tny.png';
 import Census2020 from '../images/census_2020_atx_tny.png';
 import Link from '@material-ui/core/Link';
@@ -50,7 +49,7 @@ export default function MediaCard(props) {
         tech: "React + Gatsby, US Web Design System",
         desc: "Open source microsite for the city of Austin, intended to increase participation in hard to count regions",
         github: "https://github.com/cityofaustin/census2020",
-        url: "https://deploy-preview-61--atx-census-2020.netlify.com/en"
+        url: "https://atx-census-2020.netlify.com/en/why"
     },
     {   
       img: `${SpaceBeez}`,
