@@ -5,7 +5,7 @@ export default function Resume () {
     return (
         <>
            <section className="resume">
-           <a title="Open Resume"  target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DADqd5ZPAlA/QThHPeQwTROXhYSFgMhw7w/view?utm_content=DADqd5ZPAlA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu">Full Resume<span aria-label="link emoji" role="img">🔗</span></a>
+           <a title="Open Resume"  target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DAD4-ok_imo/bzi3_sm1d612jf_Z_3sNuQ/view?utm_content=DAD4-ok_imo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Full Resume<span aria-label="link emoji" role="img">🔗</span></a>
                <main>
                <div className="row row1">
                     <h1>Mission Details</h1>
