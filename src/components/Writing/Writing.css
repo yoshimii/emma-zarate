@@ -1,0 +1,12 @@
+hr {
+    background-color: #fff;
+    box-shadow:
+      0 0 4px 2px #fff,
+      0 0 5px 3px #f0f,
+      0 0 14px 9px #0ff;
+}
+
+p {
+    text-align: left;
+    margin: 1rem;
+}

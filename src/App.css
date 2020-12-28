@@ -253,14 +253,6 @@ div {
     display: block;
 }
 
-/* about body text*/
-
-.MuiTypography-root.MuiTypography-body2.MuiTypography-colorTextSecondary {
-  font-family: 'Nineteen ninety seven';
-  text-align: left;
-  color: black;
-}
-
 /* main headings */
 .MuiTypography-root.MuiTypography-body1, .MuiTypography-root.MuiTypography-h5 {
   font-family: 'Nineteen ninety seven';
