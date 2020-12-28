@@ -77,8 +77,8 @@ export default function MediaCard(props) {
    alignItems="center"
    spacing={2}
    > 
-   {projects.map((project) => {
-     return <Grid item>  
+   {projects.map((project, index) => {
+     return <Grid item key={`gridItem-${index}`}>  
      <Card className={classes.card}>
        <CardActionArea>
          <CardMedia
