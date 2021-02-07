@@ -13,6 +13,7 @@ import SpaceBeez from '../images/space_beez_dungeon.jpg';
 import FutureHope from '../images/future_hope_tny.png';
 import Census2020 from '../images/census_2020_atx_tny.png';
 import Link from '@material-ui/core/Link';
+import TokeNotes from '../images/tokenotes.png'
 
 const useStyles = makeStyles({
   card: {
@@ -35,21 +36,20 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
   const [ projects ] = useState([
-      {   
-          img: `${FutureHope}`,
-          title: "Future Hope School",
-          tech: "React + Redux, Cloud Firestore, Material UI",
-          desc: "Retired professionals can sign up to be virtual mentors to students in need in Ghana and other parts of the world",
-          github: "https://github.com/Lambda-School-Labs/future-hope-fe",
-          url: "https://www.futurehopeschool.com/"
-      },
-      {   
-        img: `${Census2020}`,
-        title: "Census2020 ATX",
-        tech: "React + Gatsby, US Web Design System",
-        desc: "Open source microsite for the city of Austin, intended to increase participation in hard to count regions",
-        github: "https://github.com/cityofaustin/census2020",
-        url: "https://atx-census-2020.netlify.com/en/why"
+    {
+      img: `${TokeNotes}`,
+      title: "Toke Notes (Beta)",
+      tech: "Next.js, Nodejs, Material UI and CSS modules",
+      desc: "Progressive web app with push notifications, helps medical marijuana patients track what works and what doesn't",
+      github: "https://github.com/yoshimii/next-js-app",
+    },
+    {
+      img: `${Census2020}`,
+      title: "Census2020 ATX",
+      tech: "React + Gatsby, US Web Design System",
+      desc: "Open source microsite for the city of Austin, intended to increase participation in hard to count regions",
+      github: "https://github.com/cityofaustin/census2020",
+      url: "https://atx-census-2020.netlify.com/en/why"
     },
     {   
       img: `${SpaceBeez}`,
@@ -58,6 +58,13 @@ export default function MediaCard(props) {
       desc: "Chat with other players in this massive multiuser dungeon game!",
       github: "https://github.com/muddier/CS-Build-Week-1",
       url: "https://spacebeez.netlify.com/"
+  },
+  {   
+      img: `${FutureHope}`,
+      title: "Future Hope School",
+      tech: "React + Redux, Cloud Firestore, Material UI",
+      desc: "Retired professionals can sign up to be virtual mentors to students in need in Ghana and other parts of the world",
+      github: "https://github.com/Lambda-School-Labs/future-hope-fe",
   },
   {   
     img: `${DeforestationDashboard}`,
@@ -101,11 +108,12 @@ export default function MediaCard(props) {
            Code
          </Link>
          </Button>
+         {project.url &&
          <Button size="small" color="primary">
          <Link href={project.url} target="_blank" rel="noopener" className={classes.link}>
            Try It Out
          </Link>
-         </Button>
+         </Button>}
        </CardActions>
      </Card>
      </Grid>
